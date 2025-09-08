@@ -32,10 +32,10 @@ jobs:
           run: pa11y-ci $WEBSITE_TO_AUDIT -c ./.pa11yci
 
       - name: Comment pull request
-        uses: marocchino/sticky-pull-request-comment@v2
+        uses: marocchino/sticky-pull-request-comment@v2.9.4
         if: always()
         with:
-          GITHUB_TOKEN: ${{ secrets.GHTOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           header: pa11y-comment
           recreate: true
           message: |
