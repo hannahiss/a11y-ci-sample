@@ -1,4 +1,4 @@
-name: ♿️ A11Y CI with Pa11y
+name: ♿️ A11Y CI with Pa11y on DEVFEST
 
 on:
   pull_request:
